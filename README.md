@@ -84,18 +84,28 @@ The purpose of this app is to bring fellow gym goers to work out together based 
 
 | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
+   | objectId      | String   | unique id for the user profile (default field) |
    | author        | Pointer to User| image author |
    | image         | File     | image that user posts |
    | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
-   | createdAt     | DateTime | date when post is created (default field) |
-   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | swipeCount   | Number   | number of swipes for the profile |
+   | createdAt     | DateTime | date when profile is created (default field) |
+   | updatedAt     | DateTime | date when profile is last updated (default field) |
+   | weightStats     | Number | statistics of user's profile |
 
-### Models
-[Add table of models]
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
+#### List of network requests by screen
+   - Chat Screen
+      - (Read/GET) Query all text messages
+      - (Create/POST) Send text messages
+   - Home Feed Screen
+      - (Read/GET) Query all posts where user's statistics are similar
+      - (Create/POST) Create a new chat on a post
+      - (Delete) Delete existing profile
+      - (Create/POST) Create a new chat with a profile
+   - Profile Screen
+      - (Read/GET) Query logged in user object
+      - (Update/PUT) Update user profile image
+      - (Update/PUT) Update user profile statistics
+
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
