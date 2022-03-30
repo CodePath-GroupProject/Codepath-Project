@@ -96,11 +96,23 @@ The purpose of this app is to bring fellow gym goers to work out together based 
 ### Networking
 #### List of network requests by screen
    - Login Screen
-      - (Read/GET) Query the user with matching username & password
+      - N/A
    - Register Screen
       - (Create/POST) Creat new user with email, username, password
    - Chat Screen
       - (Read/GET) Query all text messages
+        ``` swift
+        let query = PFQuery(className:"Post")
+        query.whereKey("author", equalTo: currentUser)
+        query.order(byDescending: "createdAt")
+        query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+        if let error = error {
+          print(error.localizedDescription)
+        } else if let posts = posts {
+          print("Successfully retrieved \(posts.count) posts.")
+        // TODO: Do something with posts...
+        }
+        ```
       - (Create/POST) Send text messages
       - (Read/GET) Query the users' profile picture as icon
       - (Read/GET) Query the users' name
