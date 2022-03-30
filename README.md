@@ -98,7 +98,7 @@ The purpose of this app is to bring fellow gym goers to work out together based 
    - Login Screen
       - (Read/GET) Query the user with matching username & password
    - Register Screen
-      - (Creat/POST) Creat new user with email, username, password
+      - (Create/POST) Creat new user with email, username, password
    - Chat Screen
       - (Read/GET) Query all text messages
       - (Create/POST) Send text messages
