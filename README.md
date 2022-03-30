@@ -98,7 +98,7 @@ The purpose of this app is to bring fellow gym goers to work out together based 
    - Chat Screen
       - (Read/GET) Query all text messages
       - (Create/POST) Send text messages
-   - Home Feed Screen
+   - Matching Screen
       - (Read/GET) Query all posts where user's statistics are similar
       - (Create/POST) Create a new chat on a post
       - (Delete) Delete existing profile
