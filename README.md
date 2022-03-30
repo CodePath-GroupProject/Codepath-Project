@@ -95,17 +95,25 @@ The purpose of this app is to bring fellow gym goers to work out together based 
 
 ### Networking
 #### List of network requests by screen
+   - Login Screen
+      - (Read/GET) Query the user with matching username & password
+   - Register Screen
+      - (Creat/POST) Creat new user with email, username, password
    - Chat Screen
       - (Read/GET) Query all text messages
       - (Create/POST) Send text messages
+      - (Read/GET) Query the users' profile picture as icon
+      - (Read/GET) Query the users' name
    - Matching Screen
       - (Read/GET) Query all posts where user's statistics are similar
       - (Create/POST) Create a new chat on a post
       - (Delete) Delete existing profile
-      - (Create/POST) Create a new chat with a profile
+      - (Create/POST) Query users' profile's information such as name, age, bio and picture for each user
    - Profile Screen
       - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
-      - (Update/PUT) Update user profile statistics
+      - (Read/GET) Query current user profile's statistics
+      - (Update/PUT) Update user profile's image
+      - (Update/PUT) Update user profile's basic info
+      - (Update/PUT) Update user profile's statistics
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
