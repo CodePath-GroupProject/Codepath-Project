@@ -106,15 +106,30 @@ The purpose of this app is to bring fellow gym goers to work out together based 
         query.whereKey("author", equalTo: currentUser)
         query.order(byDescending: "createdAt")
         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-        if let error = error {
-          print(error.localizedDescription)
-        } else if let posts = posts {
-          print("Successfully retrieved \(posts.count) posts.")
-        // TODO: Do something with posts...
+          if let error = error {
+            print(error.localizedDescription)
+          } else if let posts = posts {
+            print("Successfully retrieved \(posts.count) posts.")
+          // TODO: Do something with posts...
+          }
         }
         ```
       - (Create/POST) Send text messages
+        ``` swift
+        let post = PFObject(className:"Post")
+        post["text"] = "Sending Text!"
+        post.saveInBackground { (succeeded, error)  in
+          if (succeeded) {
+            print("Successfully saved \(posts.count) posts.")
+          } else {
+            print("error.localizedDescription")
+          }
+        }
+        ```
       - (Read/GET) Query the users' profile picture as icon
+        ``` swift
+        
+        ```
       - (Read/GET) Query the users' name
    - Matching Screen
       - (Read/GET) Query all posts where user's statistics are similar
