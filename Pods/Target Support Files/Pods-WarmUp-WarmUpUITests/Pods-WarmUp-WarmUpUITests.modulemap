@@ -1,0 +1,6 @@
+framework module Pods_WarmUp_WarmUpUITests {
+  umbrella header "Pods-WarmUp-WarmUpUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
