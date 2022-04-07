@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2FA7B827FE85CD001F23A0 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F2FA7B727FE85CD001F23A0 /* profile.storyboard */; };
 		0F504CEA27F5405E002DC7F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504CE927F5405E002DC7F1 /* AppDelegate.swift */; };
 		0F504CEC27F5405E002DC7F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504CEB27F5405E002DC7F1 /* SceneDelegate.swift */; };
 		0F504CEE27F5405E002DC7F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504CED27F5405E002DC7F1 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		0D6B4EF7A0D0A9B05E58694B /* Pods_WarmUp_WarmUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarmUp_WarmUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2FA7B727FE85CD001F23A0 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		0F504CE627F5405E002DC7F1 /* WarmUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarmUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F504CE927F5405E002DC7F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F504CEB27F5405E002DC7F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				0F504CEB27F5405E002DC7F1 /* SceneDelegate.swift */,
 				0F504CED27F5405E002DC7F1 /* ViewController.swift */,
 				0F504CEF27F5405E002DC7F1 /* Main.storyboard */,
+				0F2FA7B727FE85CD001F23A0 /* profile.storyboard */,
 				80F0A85927F545090048C173 /* Register.storyboard */,
 				0F504CF427F54066002DC7F1 /* LaunchScreen.storyboard */,
 				0F504CF227F54066002DC7F1 /* Assets.xcassets */,
@@ -157,7 +160,6 @@
 				17496CDE7918CB3ADC180372 /* Pods-WarmUpTests.debug.xcconfig */,
 				4125FE9C57487EEAC5090FE6 /* Pods-WarmUpTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -282,6 +284,7 @@
 			files = (
 				0F504CF627F54066002DC7F1 /* LaunchScreen.storyboard in Resources */,
 				0F504CF327F54066002DC7F1 /* Assets.xcassets in Resources */,
+				0F2FA7B827FE85CD001F23A0 /* profile.storyboard in Resources */,
 				0F504CF127F5405E002DC7F1 /* Main.storyboard in Resources */,
 				80F0A85A27F545090048C173 /* Register.storyboard in Resources */,
 			);
