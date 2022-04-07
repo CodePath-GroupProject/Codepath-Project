@@ -44,7 +44,7 @@
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qbQ-mv-4cM" kind="show" id="1sv-09-bYr"/>
+                                    <segue destination="qbQ-mv-4cM" kind="presentation" modalPresentationStyle="fullScreen" id="1sv-09-bYr"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adg-lj-7Wh">
