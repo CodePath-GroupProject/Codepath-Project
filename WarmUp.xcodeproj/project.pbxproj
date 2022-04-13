@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2FA7B827FE85CD001F23A0 /* profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F2FA7B727FE85CD001F23A0 /* profile.storyboard */; };
 		0F504CEA27F5405E002DC7F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504CE927F5405E002DC7F1 /* AppDelegate.swift */; };
 		0F504CEC27F5405E002DC7F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504CEB27F5405E002DC7F1 /* SceneDelegate.swift */; };
 		0F504CEE27F5405E002DC7F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504CED27F5405E002DC7F1 /* ViewController.swift */; };
@@ -17,7 +18,8 @@
 		0F504D0B27F54066002DC7F1 /* WarmUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504D0A27F54066002DC7F1 /* WarmUpUITests.swift */; };
 		0F504D0D27F54066002DC7F1 /* WarmUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504D0C27F54066002DC7F1 /* WarmUpUITestsLaunchTests.swift */; };
 		41720322BDDCF22FBF6CB6F5 /* Pods_WarmUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FB830E86BC5254E67E1758 /* Pods_WarmUpTests.framework */; };
-		80F0A85A27F545090048C173 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80F0A85927F545090048C173 /* Register.storyboard */; };
+		8089619D2803B4D700FE6581 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8089619C2803B4D700FE6581 /* Register.storyboard */; };
+		8089619F2803B9C300FE6581 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8089619E2803B9C300FE6581 /* RegisterViewController.swift */; };
 		99575F9959B5A43FC97C3583 /* Pods_WarmUp_WarmUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6B4EF7A0D0A9B05E58694B /* Pods_WarmUp_WarmUpUITests.framework */; };
 		F752DAF0A8F3C8F8F864BE01 /* Pods_WarmUp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEB787B3D8C14691055698B /* Pods_WarmUp.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		0D6B4EF7A0D0A9B05E58694B /* Pods_WarmUp_WarmUpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarmUp_WarmUpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F2FA7B727FE85CD001F23A0 /* profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = profile.storyboard; sourceTree = "<group>"; };
 		0F504CE627F5405E002DC7F1 /* WarmUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WarmUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F504CE927F5405E002DC7F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F504CEB27F5405E002DC7F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +62,8 @@
 		23E26AE4509E5F1019369365 /* Pods-WarmUp-WarmUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUp-WarmUpUITests.debug.xcconfig"; path = "Target Support Files/Pods-WarmUp-WarmUpUITests/Pods-WarmUp-WarmUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		270418807ECC5E6947A9D442 /* Pods-WarmUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUp.debug.xcconfig"; path = "Target Support Files/Pods-WarmUp/Pods-WarmUp.debug.xcconfig"; sourceTree = "<group>"; };
 		4125FE9C57487EEAC5090FE6 /* Pods-WarmUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUpTests.release.xcconfig"; path = "Target Support Files/Pods-WarmUpTests/Pods-WarmUpTests.release.xcconfig"; sourceTree = "<group>"; };
-		80F0A85927F545090048C173 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		8089619C2803B4D700FE6581 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		8089619E2803B9C300FE6581 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A4F01B3A5A8D4B5C09DAEB76 /* Pods-WarmUp-WarmUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUp-WarmUpUITests.release.xcconfig"; path = "Target Support Files/Pods-WarmUp-WarmUpUITests/Pods-WarmUp-WarmUpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B2A5BFC01AC665CB044FCA0D /* Pods-WarmUp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUp.release.xcconfig"; path = "Target Support Files/Pods-WarmUp/Pods-WarmUp.release.xcconfig"; sourceTree = "<group>"; };
 		F0FB830E86BC5254E67E1758 /* Pods_WarmUpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarmUpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,8 +125,10 @@
 				0F504CE927F5405E002DC7F1 /* AppDelegate.swift */,
 				0F504CEB27F5405E002DC7F1 /* SceneDelegate.swift */,
 				0F504CED27F5405E002DC7F1 /* ViewController.swift */,
+				8089619E2803B9C300FE6581 /* RegisterViewController.swift */,
 				0F504CEF27F5405E002DC7F1 /* Main.storyboard */,
-				80F0A85927F545090048C173 /* Register.storyboard */,
+				8089619C2803B4D700FE6581 /* Register.storyboard */,
+				0F2FA7B727FE85CD001F23A0 /* profile.storyboard */,
 				0F504CF427F54066002DC7F1 /* LaunchScreen.storyboard */,
 				0F504CF227F54066002DC7F1 /* Assets.xcassets */,
 				0F504CF727F54066002DC7F1 /* Info.plist */,
@@ -157,7 +163,6 @@
 				17496CDE7918CB3ADC180372 /* Pods-WarmUpTests.debug.xcconfig */,
 				4125FE9C57487EEAC5090FE6 /* Pods-WarmUpTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -282,8 +287,9 @@
 			files = (
 				0F504CF627F54066002DC7F1 /* LaunchScreen.storyboard in Resources */,
 				0F504CF327F54066002DC7F1 /* Assets.xcassets in Resources */,
+				0F2FA7B827FE85CD001F23A0 /* profile.storyboard in Resources */,
 				0F504CF127F5405E002DC7F1 /* Main.storyboard in Resources */,
-				80F0A85A27F545090048C173 /* Register.storyboard in Resources */,
+				8089619D2803B4D700FE6581 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +420,7 @@
 				0F504CEE27F5405E002DC7F1 /* ViewController.swift in Sources */,
 				0F504CEA27F5405E002DC7F1 /* AppDelegate.swift in Sources */,
 				0F504CEC27F5405E002DC7F1 /* SceneDelegate.swift in Sources */,
+				8089619F2803B9C300FE6581 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
