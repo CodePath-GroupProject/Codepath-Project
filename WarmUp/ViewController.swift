@@ -16,8 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-    @IBAction func onSignin(_ sender: Any) {
+    @IBAction func onsignin(_ sender: Any) {
         let username = SigninUsername.text!
         let password = SigninPassword.text!
         
@@ -25,11 +24,10 @@ class ViewController: UIViewController {
             if user != nil {
                 self.performSegue(withIdentifier: "profilesegue", sender: nil)
             } else {
-                print ("error with signin")
+                print ("Error: \(error?.localizedDescription)")
             }
         }
-        
-    }
     
+    }
 }
 
