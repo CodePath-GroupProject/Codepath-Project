@@ -18,6 +18,7 @@
 		0F504D0B27F54066002DC7F1 /* WarmUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504D0A27F54066002DC7F1 /* WarmUpUITests.swift */; };
 		0F504D0D27F54066002DC7F1 /* WarmUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504D0C27F54066002DC7F1 /* WarmUpUITestsLaunchTests.swift */; };
 		41720322BDDCF22FBF6CB6F5 /* Pods_WarmUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FB830E86BC5254E67E1758 /* Pods_WarmUpTests.framework */; };
+		805D03642807BB2400FAFF4D /* matching.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805D03632807BB2400FAFF4D /* matching.storyboard */; };
 		8089619D2803B4D700FE6581 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8089619C2803B4D700FE6581 /* Register.storyboard */; };
 		8089619F2803B9C300FE6581 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8089619E2803B9C300FE6581 /* RegisterViewController.swift */; };
 		99575F9959B5A43FC97C3583 /* Pods_WarmUp_WarmUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6B4EF7A0D0A9B05E58694B /* Pods_WarmUp_WarmUpUITests.framework */; };
@@ -63,6 +64,7 @@
 		23E26AE4509E5F1019369365 /* Pods-WarmUp-WarmUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUp-WarmUpUITests.debug.xcconfig"; path = "Target Support Files/Pods-WarmUp-WarmUpUITests/Pods-WarmUp-WarmUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		270418807ECC5E6947A9D442 /* Pods-WarmUp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUp.debug.xcconfig"; path = "Target Support Files/Pods-WarmUp/Pods-WarmUp.debug.xcconfig"; sourceTree = "<group>"; };
 		4125FE9C57487EEAC5090FE6 /* Pods-WarmUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUpTests.release.xcconfig"; path = "Target Support Files/Pods-WarmUpTests/Pods-WarmUpTests.release.xcconfig"; sourceTree = "<group>"; };
+		805D03632807BB2400FAFF4D /* matching.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = matching.storyboard; sourceTree = "<group>"; };
 		8089619C2803B4D700FE6581 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		8089619E2803B9C300FE6581 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A4F01B3A5A8D4B5C09DAEB76 /* Pods-WarmUp-WarmUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUp-WarmUpUITests.release.xcconfig"; path = "Target Support Files/Pods-WarmUp-WarmUpUITests/Pods-WarmUp-WarmUpUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				0F504CED27F5405E002DC7F1 /* ViewController.swift */,
 				8089619E2803B9C300FE6581 /* RegisterViewController.swift */,
 				0F504CEF27F5405E002DC7F1 /* Main.storyboard */,
+				805D03632807BB2400FAFF4D /* matching.storyboard */,
 				8089619C2803B4D700FE6581 /* Register.storyboard */,
 				0F2FA7B727FE85CD001F23A0 /* profile.storyboard */,
 				A63F40252806993200F9BCC2 /* Settings.storyboard */,
@@ -292,6 +295,7 @@
 				0F504CF327F54066002DC7F1 /* Assets.xcassets in Resources */,
 				0F2FA7B827FE85CD001F23A0 /* profile.storyboard in Resources */,
 				A63F40262806993200F9BCC2 /* Settings.storyboard in Resources */,
+				805D03642807BB2400FAFF4D /* matching.storyboard in Resources */,
 				0F504CF127F5405E002DC7F1 /* Main.storyboard in Resources */,
 				8089619D2803B4D700FE6581 /* Register.storyboard in Resources */,
 			);
