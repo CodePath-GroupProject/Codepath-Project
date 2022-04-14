@@ -87,26 +87,11 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="W1m-hg-lAc">
-            <objects>
-                <viewController id="Ave-qG-rSC" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Yhu-s5-TCo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="fuf-JT-eNl"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c6M-Kt-q7r" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1265" y="-62"/>
-        </scene>
         <!--profile-->
         <scene sceneID="YYT-4x-0iP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ay8-g4-Bmk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="profile" id="aaX-6o-hlr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ay8-g4-Bmk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="675" y="41"/>
         </scene>
