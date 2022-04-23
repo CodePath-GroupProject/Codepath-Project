@@ -71,7 +71,7 @@
                     <connections>
                         <outlet property="SigninPassword" destination="pgx-Py-llj" id="rrR-tL-Ieq"/>
                         <outlet property="SigninUsername" destination="4EA-T9-4cj" id="DNU-VY-bJ7"/>
-                        <segue destination="aaX-6o-hlr" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="C2e-S5-c0M"/>
+                        <segue destination="aaX-6o-hlr" kind="presentation" identifier="profilesegue" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="C2e-S5-c0M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
