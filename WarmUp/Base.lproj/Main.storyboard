@@ -71,17 +71,19 @@
                     <connections>
                         <outlet property="SigninPassword" destination="pgx-Py-llj" id="rrR-tL-Ieq"/>
                         <outlet property="SigninUsername" destination="4EA-T9-4cj" id="DNU-VY-bJ7"/>
-                        <segue destination="aaX-6o-hlr" kind="presentation" identifier="profilesegue" id="PaZ-dd-I1x"/>
+                        <segue destination="aaX-6o-hlr" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="C2e-S5-c0M"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18.840579710144929" y="65.625"/>
+            <point key="canvasLocation" x="38" y="90"/>
         </scene>
         <!--profile-->
         <scene sceneID="YYT-4x-0iP">
             <objects>
-                <viewControllerPlaceholder storyboardName="profile" id="aaX-6o-hlr" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="profile" id="aaX-6o-hlr" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="T6i-Tb-X41"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ay8-g4-Bmk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="675" y="41"/>

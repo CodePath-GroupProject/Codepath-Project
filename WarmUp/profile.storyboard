@@ -36,6 +36,7 @@
         <scene sceneID="H0s-zZ-WwV">
             <objects>
                 <tabBarController id="85c-36-EtH" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vLN-o0-osk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
