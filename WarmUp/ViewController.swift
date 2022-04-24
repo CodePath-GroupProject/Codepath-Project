@@ -11,7 +11,9 @@ import Parse
 class ViewController: UIViewController {
 
     @IBOutlet weak var SigninUsername: UITextField!
-    @IBOutlet weak var SigninPassword: UITextField!
+    
+    @IBOutlet weak var SigninPassword: UITextField! 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
