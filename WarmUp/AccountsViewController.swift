@@ -35,19 +35,21 @@ class AccountsViewController: UIViewController {
 
     @IBAction func submitAction(_ sender: Any) {
         
-        let accounts = PFObject(className:"User")
-        accounts["Name"] = "CodePath"
-        accounts["Age"] = 1997
-        accounts["Gender"] = "Male"
-        accounts["Bench"] = 135
-        accounts["Deadlift"] = 205
-        accounts["Squat"] = 135
-        accounts["Mile"] = 10
+        var accounts = PFObject(className:"UserStats")
+        accounts["Name"] = StatName.text!
+        accounts["Age"] = Int(StatAge.text!)
+        accounts["Gender"] = StatGender.text!
+        accounts["Bench"] = Int(StatBench.text!)
+        accounts["Deadlift"] = Int(StatDeadlift.text!)
+        accounts["Squat"] = Int(StatSquat.text!)
+        accounts["Mile"] = StatMile.text!
         accounts.saveInBackground {
           (success: Bool, error: Error?) in
           if (success) {
+              self.performSegue(withIdentifier: "landingpage", sender: nil)
             // The object has been saved.
           } else {
+              print ("Error: \(error?.localizedDescription)")
             // There was a problem, check error.description
           }
         }
