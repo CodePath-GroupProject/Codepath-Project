@@ -5,6 +5,7 @@ target 'WarmUp' do
   use_frameworks!
 
   # Pods for WarmUp
+  pod 'Koloda'
   pod 'Parse'
   pod 'AlamofireImage'
 
