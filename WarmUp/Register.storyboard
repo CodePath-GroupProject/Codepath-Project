@@ -38,7 +38,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onSignup:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Hf8-bE-IXO"/>
-                                    <segue destination="O15-zS-Q8g" kind="presentation" modalPresentationStyle="fullScreen" id="VDE-pK-RX2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Warm Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsM-on-ikp">
@@ -73,16 +72,17 @@
                     <connections>
                         <outlet property="registerPassword" destination="zzW-Fo-ffM" id="Jh7-h1-DpQ"/>
                         <outlet property="registerUsername" destination="YOV-vr-qKS" id="eq2-VL-lau"/>
+                        <segue destination="O15-zS-Q8g" kind="presentation" identifier="signupsegue" modalPresentationStyle="fullScreen" id="GZo-cb-tTC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="20" y="74"/>
         </scene>
-        <!--Register View Controller-->
+        <!--Accounts View Controller-->
         <scene sceneID="j9W-iG-b28">
             <objects>
-                <viewController id="O15-zS-Q8g" customClass="RegisterViewController" customModule="WarmUp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="O15-zS-Q8g" customClass="AccountsViewController" customModule="WarmUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sa8-uc-4XQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -131,6 +131,19 @@
                                     <segue destination="Y6W-OH-hqX" kind="presentation" modalPresentationStyle="fullScreen" id="yLr-8h-TmD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uk-J3-13E">
+                                <rect key="frame" x="132" y="772" width="150" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.87058823529999996" green="0.15222900280000001" blue="0.1527728488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="submitAction:" destination="O15-zS-Q8g" eventType="touchUpInside" id="iXv-g8-yFi"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7an-6o-eGH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -160,9 +173,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="StatAge" destination="MwJ-jH-0EW" id="qu3-Zt-Lca"/>
+                        <outlet property="StatBench" destination="xEF-gj-LfB" id="OSR-25-Xm3"/>
+                        <outlet property="StatDeadlift" destination="J03-3f-hi2" id="WZ2-8e-cko"/>
+                        <outlet property="StatGender" destination="48A-gi-wre" id="fLX-bP-t6F"/>
+                        <outlet property="StatMile" destination="vJM-i4-l4n" id="X0U-sN-6oc"/>
+                        <outlet property="StatName" destination="m5R-KG-km1" id="GBl-U7-WOt"/>
+                        <outlet property="StatSquat" destination="BtX-S9-1q4" id="Z1N-lZ-XTA"/>
                         <outlet property="ageTxt" destination="MwJ-jH-0EW" id="hR1-1k-6kh"/>
                         <outlet property="registerName" destination="m5R-KG-km1" id="HEb-Lh-QRH"/>
-                        <segue destination="x71-Ui-tnc" kind="presentation" modalPresentationStyle="fullScreen" id="toM-hP-aqC"/>
+                        <outlet property="submitbtn" destination="3uk-J3-13E" id="VBJ-bj-0n4"/>
+                        <segue destination="x71-Ui-tnc" kind="presentation" modalPresentationStyle="fullScreen" id="GnX-hm-Lpx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rQ0-dJ-0y6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -177,10 +198,10 @@
             </objects>
             <point key="canvasLocation" x="304" y="483"/>
         </scene>
-        <!--Main-->
+        <!--profile-->
         <scene sceneID="bWR-Ko-phs">
             <objects>
-                <viewControllerPlaceholder storyboardName="Main" id="x71-Ui-tnc" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="profile" id="x71-Ui-tnc" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bs4-PP-avv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1767" y="98"/>

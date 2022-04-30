@@ -17,6 +17,7 @@
 		0F504D0127F54066002DC7F1 /* WarmUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504D0027F54066002DC7F1 /* WarmUpTests.swift */; };
 		0F504D0B27F54066002DC7F1 /* WarmUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504D0A27F54066002DC7F1 /* WarmUpUITests.swift */; };
 		0F504D0D27F54066002DC7F1 /* WarmUpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F504D0C27F54066002DC7F1 /* WarmUpUITestsLaunchTests.swift */; };
+		0F6B69C4281A2B3D00C5EB2E /* AccountsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F6B69C3281A2B3D00C5EB2E /* AccountsViewController.swift */; };
 		41720322BDDCF22FBF6CB6F5 /* Pods_WarmUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FB830E86BC5254E67E1758 /* Pods_WarmUpTests.framework */; };
 		805D03642807BB2400FAFF4D /* matching.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805D03632807BB2400FAFF4D /* matching.storyboard */; };
 		8089619D2803B4D700FE6581 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8089619C2803B4D700FE6581 /* Register.storyboard */; };
@@ -59,6 +60,7 @@
 		0F504D0627F54066002DC7F1 /* WarmUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WarmUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F504D0A27F54066002DC7F1 /* WarmUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUpUITests.swift; sourceTree = "<group>"; };
 		0F504D0C27F54066002DC7F1 /* WarmUpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarmUpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0F6B69C3281A2B3D00C5EB2E /* AccountsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsViewController.swift; sourceTree = "<group>"; };
 		17496CDE7918CB3ADC180372 /* Pods-WarmUpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUpTests.debug.xcconfig"; path = "Target Support Files/Pods-WarmUpTests/Pods-WarmUpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1EEB787B3D8C14691055698B /* Pods_WarmUp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WarmUp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23E26AE4509E5F1019369365 /* Pods-WarmUp-WarmUpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUp-WarmUpUITests.debug.xcconfig"; path = "Target Support Files/Pods-WarmUp-WarmUpUITests/Pods-WarmUp-WarmUpUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				0F504CEB27F5405E002DC7F1 /* SceneDelegate.swift */,
 				0F504CED27F5405E002DC7F1 /* ViewController.swift */,
 				8089619E2803B9C300FE6581 /* RegisterViewController.swift */,
+				0F6B69C3281A2B3D00C5EB2E /* AccountsViewController.swift */,
 				0F504CEF27F5405E002DC7F1 /* Main.storyboard */,
 				805D03632807BB2400FAFF4D /* matching.storyboard */,
 				8089619C2803B4D700FE6581 /* Register.storyboard */,
@@ -427,6 +430,7 @@
 			files = (
 				0F504CEE27F5405E002DC7F1 /* ViewController.swift in Sources */,
 				0F504CEA27F5405E002DC7F1 /* AppDelegate.swift in Sources */,
+				0F6B69C4281A2B3D00C5EB2E /* AccountsViewController.swift in Sources */,
 				0F504CEC27F5405E002DC7F1 /* SceneDelegate.swift in Sources */,
 				8089619F2803B9C300FE6581 /* RegisterViewController.swift in Sources */,
 			);

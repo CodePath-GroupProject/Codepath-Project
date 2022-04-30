@@ -13,11 +13,6 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var registerUsername: UITextField!
     
     @IBOutlet weak var registerPassword: UITextField!
-
-    @IBOutlet weak var registerName: UITextField!
-    
-    @IBOutlet weak var ageTxt: UITextField!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
