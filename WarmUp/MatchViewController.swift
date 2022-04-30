@@ -12,7 +12,7 @@ class MatchViewController: UIViewController {
 
     @IBOutlet weak var kolodaView: KolodaView!
     
-    let images = ["Ronnie", "Noel", "Arnold", "cbum", "Athlean", "Jax", "Hybrid", "Scott"]
+    let images = ["Ronnie", "Noel", "Arnold", "Athlean", "Jax", "Hybrid", "Scott", "cbum"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

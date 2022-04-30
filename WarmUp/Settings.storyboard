@@ -59,7 +59,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Out"/>
                                 <connections>
-                                    <segue destination="d8W-qn-7sp" kind="presentation" identifier="SettingsToMain" modalPresentationStyle="fullScreen" id="zhb-NR-vij"/>
+                                    <segue destination="d8W-qn-7sp" kind="presentation" modalPresentationStyle="fullScreen" id="F7G-Rr-Uvb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Settings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQZ-ii-2Pp" userLabel="Settings Label">
@@ -192,7 +192,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ium-YQ-x2C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608" y="40"/>
+            <point key="canvasLocation" x="736" y="6"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eUh-Xm-bNU">
@@ -266,7 +266,7 @@
                     <navigationItem key="navigationItem" title="Update Stats" id="ztO-QT-yAN">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="SUf-NP-MdS">
                             <connections>
-                                <segue destination="kwJ-OT-xjh" kind="presentation" modalPresentationStyle="fullScreen" id="8td-Tu-Baz"/>
+                                <segue destination="kwJ-OT-xjh" kind="presentation" identifier="updatetosettings" modalPresentationStyle="fullScreen" id="8td-Tu-Baz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
