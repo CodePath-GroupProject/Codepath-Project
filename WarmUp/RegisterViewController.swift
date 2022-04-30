@@ -20,6 +20,11 @@ class RegisterViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        registerUsername.resignFirstResponder()
+        registerPassword.resignFirstResponder()
+    }
+    
     
     @IBAction func onSignup(_ sender: Any) {
         let user = PFUser()

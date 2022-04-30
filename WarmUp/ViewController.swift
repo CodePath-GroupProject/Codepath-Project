@@ -18,6 +18,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        SigninUsername.resignFirstResponder()
+        SigninPassword.resignFirstResponder()
+    }
+    
     @IBAction func onsignin(_ sender: Any) {
         let username = SigninUsername.text!
         let password = SigninPassword.text!
