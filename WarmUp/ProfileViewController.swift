@@ -16,35 +16,30 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var profileGender: UILabel!
     @IBOutlet weak var profileBench: UILabel!
     @IBOutlet weak var profileDeadlift: UILabel!
+    @IBOutlet weak var profileSquat: UILabel!
     @IBOutlet weak var profileMile: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadstats()
-            // Do any additional setup after loading the view.
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        let query = PFQuery(className: "UserStats")
-        query.getObjectInBackground(withId: "b5JQpBuSam") { (gameScore, error) in
+        let query = PFQuery(className:"UserStats")
+        query.getObjectInBackground(withId: "NWV7sqjfmD") { (gameScore, error) in
             if error == nil {
                 // Success!
-                self.profileName.text = gameScore!["Name"] as? String
-                self.update()
+                self.profileName.text = ((gameScore!["Name"] as? String)!)
+                self.profileAge.text = (gameScore!["Age"] as? String)! + " years"
+                self.profileGender.text = gameScore!["Gender"] as? String
+                self.profileBench.text = (gameScore!["Bench"] as? String)! + " lbs"
+                self.profileSquat.text = (gameScore!["Squat"] as? String)! + " lbs"
+                self.profileDeadlift.text = (gameScore!["Deadlift"] as? String)! + " lbs"
+                self.profileMile.text = (gameScore!["Mile"] as? String)! + " miles"
             } else {
                 // Fail!
             }
         }
+//        profileName.text = "poop"
+//        print(profileName.text)// Do any additional setup after loading the view.
     }
 
-    func update () {
-        DispatchQueue.main.async {
-            self.profileName.text = "MyNewText"
-        }
-    }
-    
     func loadstats() {
         let query = PFQuery(className:"UserStats")
         query.getObjectInBackground(withId: "b5JQpBuSam") { (gameScore, error) in
@@ -59,6 +54,9 @@ class ProfileViewController: UIViewController {
         
     }
     
+//    @IBAction func changebtn(_ sender: Any) {
+//        profileName.text = "poop"
+//    }
     
     
 

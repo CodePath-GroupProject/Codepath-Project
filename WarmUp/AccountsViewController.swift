@@ -37,11 +37,11 @@ class AccountsViewController: UIViewController {
         
         var accounts = PFObject(className:"UserStats")
         accounts["Name"] = StatName.text!
-        accounts["Age"] = Int(StatAge.text!)
+        accounts["Age"] = StatAge.text!
         accounts["Gender"] = StatGender.text!
-        accounts["Bench"] = Int(StatBench.text!)
-        accounts["Deadlift"] = Int(StatDeadlift.text!)
-        accounts["Squat"] = Int(StatSquat.text!)
+        accounts["Bench"] = StatBench.text!
+        accounts["Deadlift"] = StatDeadlift.text!
+        accounts["Squat"] = StatSquat.text!
         accounts["Mile"] = StatMile.text!
         accounts.saveInBackground {
           (success: Bool, error: Error?) in
