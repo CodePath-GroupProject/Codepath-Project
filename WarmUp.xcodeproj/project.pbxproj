@@ -21,6 +21,7 @@
 		41720322BDDCF22FBF6CB6F5 /* Pods_WarmUpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0FB830E86BC5254E67E1758 /* Pods_WarmUpTests.framework */; };
 		805D03642807BB2400FAFF4D /* matching.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805D03632807BB2400FAFF4D /* matching.storyboard */; };
 		807468E5281D3A2F002ABE76 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807468E4281D3A2F002ABE76 /* ProfileViewController.swift */; };
+		807468E7281D552A002ABE76 /* UpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807468E6281D552A002ABE76 /* UpdateViewController.swift */; };
 		8089619D2803B4D700FE6581 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8089619C2803B4D700FE6581 /* Register.storyboard */; };
 		8089619F2803B9C300FE6581 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8089619E2803B9C300FE6581 /* RegisterViewController.swift */; };
 		99575F9959B5A43FC97C3583 /* Pods_WarmUp_WarmUpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D6B4EF7A0D0A9B05E58694B /* Pods_WarmUp_WarmUpUITests.framework */; };
@@ -69,6 +70,7 @@
 		4125FE9C57487EEAC5090FE6 /* Pods-WarmUpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUpTests.release.xcconfig"; path = "Target Support Files/Pods-WarmUpTests/Pods-WarmUpTests.release.xcconfig"; sourceTree = "<group>"; };
 		805D03632807BB2400FAFF4D /* matching.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = matching.storyboard; sourceTree = "<group>"; };
 		807468E4281D3A2F002ABE76 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		807468E6281D552A002ABE76 /* UpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateViewController.swift; sourceTree = "<group>"; };
 		8089619C2803B4D700FE6581 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		8089619E2803B9C300FE6581 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A4F01B3A5A8D4B5C09DAEB76 /* Pods-WarmUp-WarmUpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WarmUp-WarmUpUITests.release.xcconfig"; path = "Target Support Files/Pods-WarmUp-WarmUpUITests/Pods-WarmUp-WarmUpUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 				0F504CED27F5405E002DC7F1 /* ViewController.swift */,
 				807468E4281D3A2F002ABE76 /* ProfileViewController.swift */,
 				8089619E2803B9C300FE6581 /* RegisterViewController.swift */,
+				807468E6281D552A002ABE76 /* UpdateViewController.swift */,
 				0F6B69C3281A2B3D00C5EB2E /* AccountsViewController.swift */,
 				0F504CEF27F5405E002DC7F1 /* Main.storyboard */,
 				8089619C2803B4D700FE6581 /* Register.storyboard */,
@@ -436,6 +439,7 @@
 				0F504CEA27F5405E002DC7F1 /* AppDelegate.swift in Sources */,
 				0F6B69C4281A2B3D00C5EB2E /* AccountsViewController.swift in Sources */,
 				0F504CEC27F5405E002DC7F1 /* SceneDelegate.swift in Sources */,
+				807468E7281D552A002ABE76 /* UpdateViewController.swift in Sources */,
 				8089619F2803B9C300FE6581 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

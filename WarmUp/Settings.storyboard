@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -123,6 +123,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="gym icon"/>
+                                <connections>
+                                    <segue destination="2DN-tV-AEf" kind="presentation" id="ZRr-uQ-zKA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcc-g0-F9M" userLabel="Location_Button">
                                 <rect key="frame" x="332" y="201" width="45" height="42"/>
@@ -172,6 +175,12 @@
                                 <color key="shadowColor" systemColor="placeholderTextColor"/>
                                 <size key="shadowOffset" width="5" height="10"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H9y-gd-Hnm">
+                                <rect key="frame" x="20" y="44" width="120" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -210,7 +219,103 @@
             </objects>
             <point key="canvasLocation" x="1493" y="808"/>
         </scene>
+        <!--Update Stats-->
+        <scene sceneID="f9O-14-FvA">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="1EC-6J-kcO" customClass="UpdateViewController" customModule="WarmUp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1um-lD-tHJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jwd-b3-a4t">
+                                <rect key="frame" x="100" y="674" width="214" height="38"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.87058823529999996" green="0.15222900280000001" blue="0.1527728488" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Submit" cornerStyle="medium">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="updateAction:" destination="1EC-6J-kcO" eventType="touchUpInside" id="aK2-d4-MNG"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bench" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOn-Np-XPz">
+                                <rect key="frame" x="100" y="188" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="253" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Deadlift" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IW5-bg-ykJ">
+                                <rect key="frame" x="100" y="322" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Squat" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3LF-SK-Arb">
+                                <rect key="frame" x="100" y="456" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="254" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mile" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gd3-Nr-yW1">
+                                <rect key="frame" x="100" y="540" width="214" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g0V-fp-488"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jwd-b3-a4t" firstAttribute="top" secondItem="gd3-Nr-yW1" secondAttribute="bottom" constant="50" id="3N0-a9-5UO"/>
+                            <constraint firstItem="IW5-bg-ykJ" firstAttribute="top" secondItem="fOn-Np-XPz" secondAttribute="bottom" constant="50" id="In2-kN-ECH"/>
+                            <constraint firstItem="fOn-Np-XPz" firstAttribute="top" secondItem="g0V-fp-488" secondAttribute="top" constant="100" id="MQt-Gw-EwC"/>
+                            <constraint firstItem="gd3-Nr-yW1" firstAttribute="top" secondItem="3LF-SK-Arb" secondAttribute="bottom" constant="100" id="Tu1-in-d7r"/>
+                            <constraint firstItem="gd3-Nr-yW1" firstAttribute="top" secondItem="3LF-SK-Arb" secondAttribute="bottom" constant="50" id="k1M-ct-Jf0"/>
+                            <constraint firstItem="IW5-bg-ykJ" firstAttribute="top" secondItem="fOn-Np-XPz" secondAttribute="bottom" constant="100" id="luh-7f-Nvc"/>
+                            <constraint firstItem="3LF-SK-Arb" firstAttribute="top" secondItem="IW5-bg-ykJ" secondAttribute="bottom" constant="50" id="sbj-ed-MNf"/>
+                            <constraint firstItem="3LF-SK-Arb" firstAttribute="top" secondItem="IW5-bg-ykJ" secondAttribute="bottom" constant="100" id="t5B-RP-6GU"/>
+                            <constraint firstItem="Jwd-b3-a4t" firstAttribute="top" secondItem="gd3-Nr-yW1" secondAttribute="bottom" constant="100" id="zVi-nz-fZb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Update Stats" id="ztO-QT-yAN">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="SUf-NP-MdS">
+                            <connections>
+                                <segue destination="Y6W-OH-hqX" kind="presentation" identifier="updatetosettings" modalPresentationStyle="fullScreen" id="4VB-oR-1ff"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="updateBench" destination="fOn-Np-XPz" id="svE-Tg-1AZ"/>
+                        <outlet property="updateButton" destination="Jwd-b3-a4t" id="J66-6D-NWC"/>
+                        <outlet property="updateDeadlift" destination="IW5-bg-ykJ" id="1h7-bw-f6a"/>
+                        <outlet property="updateMile" destination="gd3-Nr-yW1" id="n9S-WF-kJ4"/>
+                        <outlet property="updateSquat" destination="gd3-Nr-yW1" id="xel-Wa-TTl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ds-JD-mTl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1025" y="1493"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D5I-N6-xEZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="2DN-tV-AEf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="prc-8b-QhV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mQd-jv-hWX">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1EC-6J-kcO" kind="relationship" relationship="rootViewController" id="4S7-Ka-9OT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hI0-ef-gx5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1025" y="785"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="4VB-oR-1ff"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="gym icon" width="60" height="60"/>
         <systemColor name="placeholderTextColor">
