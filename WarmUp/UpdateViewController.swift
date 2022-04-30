@@ -21,6 +21,14 @@ class UpdateViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        updateBench.resignFirstResponder()
+        updateDeadlift.resignFirstResponder()
+        updateSquat.resignFirstResponder()
+        updateMile.resignFirstResponder()      
+    }
+    
+    
     @IBAction func updateAction(_ sender: Any) {
         let query = PFQuery(className: "UserStats")
         query.getObjectInBackground(withId: "NWV7sqjfmD") {
