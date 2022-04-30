@@ -12,7 +12,7 @@ class MatchViewController: UIViewController {
 
     @IBOutlet weak var kolodaView: KolodaView!
     
-    let images = ["Ronnie", "noel", "Arnold", "cbum", "athlean", "Jax", "Hybrid", "scott"]
+    let images = ["Ronnie", "Noel", "Arnold", "cbum", "Athlean", "Jax", "Hybrid", "Scott"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +34,7 @@ class MatchViewController: UIViewController {
       }
       
       func koloda(_ koloda: KolodaView, didSelectCardAt index: Int) {
-        let alert = UIAlertController(title: "Congratulation!", message: "Now you're \(images[index])", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Congratulation!", message: "Now you're connected with \(images[index]) !", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         self.present(alert, animated: true)
       }
