@@ -40,12 +40,6 @@
                                     <action selector="onSignup:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Hf8-bE-IXO"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" Warm Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nsM-on-ikp">
-                                <rect key="frame" x="78" y="205" width="259" height="198"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="45"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Already have an" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vp2-QT-a3c">
                                 <rect key="frame" x="98" y="643" width="136" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -62,17 +56,28 @@
                                     <color key="titleColor" systemColor="systemRedColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="d4E-HA-yIw" kind="presentation" modalPresentationStyle="fullScreen" id="048-MF-AFA"/>
+                                    <segue destination="d4E-HA-yIw" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="048-MF-AFA"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Warm Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gSC-hb-wpc">
+                                <rect key="frame" x="20" y="244" width="367" height="104"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="0.79174769570000003" blue="0.62776752899999999" alpha="0.88178964209999999" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="82"/>
+                                <color key="textColor" red="0.77739377369999996" green="0.0095168679780000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="placeholderTextColor"/>
+                                <size key="shadowOffset" width="5" height="10"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.79174769570000003" blue="0.62776752899999999" alpha="0.88178964209999999" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="1" green="0.79174769570000003" blue="0.62776752899999999" alpha="0.88178964209999999" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="registerPassword" destination="zzW-Fo-ffM" id="Jh7-h1-DpQ"/>
                         <outlet property="registerUsername" destination="YOV-vr-qKS" id="eq2-VL-lau"/>
-                        <segue destination="O15-zS-Q8g" kind="presentation" identifier="signupsegue" modalPresentationStyle="fullScreen" id="GZo-cb-tTC"/>
+                        <segue destination="O15-zS-Q8g" kind="presentation" identifier="signupsegue" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="GZo-cb-tTC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -146,7 +151,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="7an-6o-eGH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.79174769570000003" blue="0.62776752899999999" alpha="0.88178964209999999" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vJM-i4-l4n" firstAttribute="leading" secondItem="7an-6o-eGH" secondAttribute="leading" constant="100" id="49u-pn-yqa"/>
                             <constraint firstItem="BtX-S9-1q4" firstAttribute="leading" secondItem="7an-6o-eGH" secondAttribute="leading" constant="100" id="9ap-GB-Beg"/>
@@ -208,8 +213,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
