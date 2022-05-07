@@ -1,4 +1,12 @@
-# Warmup
+# Weight Up
+
+## Video Walkthrough
+
+Here's a walkthrough of our app:
+
+<img src='http://g.recordit.co/o3toKKSEhg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='http://g.recordit.co/4bFZTdLiw2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 ## Table of Contents
 1. [Overview](#Overview)
